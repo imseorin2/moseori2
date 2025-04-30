@@ -248,3 +248,73 @@ A*B/C + D*E -F
 계산기 프로그램: 중위수식 -> 후위수식 -> 후위수식 계산 : 화살표 두번 스택을 사용
 
 ---
+
+# 시험 문제 풀이
+1번
+배열
+- 장점: 구현이 용이하고 특정원소 탐색이 쉬움
+-단점: 중간에 원소 삽입, 삭제가 어려움, 메모리 사용 비효율적
+
+연결리스트
+-장점: 중간에 원소 삽입 삭제가 편리함, 메모리 사용 효율적
+- 단점: 구현이 어려움, 특정 원소의 탐색이 어려움
+
+
+스택: LIFO 역순 문자열, 후위 수식 계산
+큐: FIFO 프린터큐, 들어온 순서대로 처리해야하는 데이터 저장
+
+
+
+2번
+배열: 인덱스를 이용( 인덱스에 위치 더하기) , 특정 원소 바로 검색
+연결자료구조: head가 가르키는 첫번째 노드부터 순차 검색
+head 부터 시작해서 차례대로 하나씩 읽는 방법 밖에 없음
+-> 그림은 3장 참고
+
+3번
+빅오-시간복잡도
+
+4번 전위/후위
+A - B * C / E + F/G - H
+전위:+-A/*BCE/FGH
+후위: ABC*E/- FG/+ H -
+
+5번
+큐를 1차원배열(순차리스트)
+
+초기화 = -1
+front= rear -> 비어있다
+rear= n-1 -> 배열이 꽉 찼다
+
+자리가 비어있음에도 rear= n-1이 되면 포화 상태로 인식
+-> 빈 공간을 활용하기 위해 원형큐 생성
+
+
+
+self.PhoneBook([name, phone])
+
+for i in self.PhoneBook :
+		if(i[0] == name):
+			position= count
+			break
+		else: 
+			count= count +1
+
+
+del(self.PhoneBook[position])
+
+
+if self.head ==None:
+	self.head ==self.Node(add_data)
+
+
+
+
+
+if not prev:
+	 new_node.next= self.head
+	 self.head= new_node
+
+else: 
+	prev.next= new_node
+	new_node.next=current
