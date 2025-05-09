@@ -318,3 +318,5 @@ if not prev:
 else: 
 	prev.next= new_node
 	new_node.next=current
+
+ # 8주차- 트리
